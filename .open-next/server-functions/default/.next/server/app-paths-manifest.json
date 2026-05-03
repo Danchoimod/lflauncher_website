@@ -1,0 +1,13 @@
+{
+  "/[lang]/about/page": "app/[lang]/about/page.js",
+  "/[lang]/download/page": "app/[lang]/download/page.js",
+  "/[lang]/page": "app/[lang]/page.js",
+  "/[lang]/wiki/getting-started/creating-instance/page": "app/[lang]/wiki/getting-started/creating-instance/page.js",
+  "/[lang]/wiki/getting-started/installing-java/page": "app/[lang]/wiki/getting-started/installing-java/page.js",
+  "/[lang]/wiki/getting-started/installing-lflauncher/page": "app/[lang]/wiki/getting-started/installing-lflauncher/page.js",
+  "/[lang]/wiki/overview/feedback-and-bugs/page": "app/[lang]/wiki/overview/feedback-and-bugs/page.js",
+  "/[lang]/wiki/overview/page": "app/[lang]/wiki/overview/page.js",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+}

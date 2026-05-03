@@ -1,0 +1,13 @@
+{
+  "/[lang]/about/page": "/[lang]/about",
+  "/[lang]/download/page": "/[lang]/download",
+  "/[lang]/page": "/[lang]",
+  "/[lang]/wiki/getting-started/creating-instance/page": "/[lang]/wiki/getting-started/creating-instance",
+  "/[lang]/wiki/getting-started/installing-java/page": "/[lang]/wiki/getting-started/installing-java",
+  "/[lang]/wiki/getting-started/installing-lflauncher/page": "/[lang]/wiki/getting-started/installing-lflauncher",
+  "/[lang]/wiki/overview/feedback-and-bugs/page": "/[lang]/wiki/overview/feedback-and-bugs",
+  "/[lang]/wiki/overview/page": "/[lang]/wiki/overview",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico"
+}
