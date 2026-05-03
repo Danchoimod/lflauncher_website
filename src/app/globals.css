@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 @import "tailwindcss";
 
 @theme inline {
@@ -5,11 +6,11 @@
   --color-foreground: var(--foreground);
   --font-sans: 'Inter', var(--font-geist-sans), system-ui, -apple-system, sans-serif;
   --font-display: 'Outfit', var(--font-outfit), system-ui, -apple-system, sans-serif;
-  
+
   --color-brand-primary: #1E6D00;
   --color-brand-secondary: #545F73;
   --color-brand-dark: #0F172A;
-  
+
   --radius-hero: 36px;
   --radius-btn: 8px;
 }
