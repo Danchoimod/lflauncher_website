@@ -36,6 +36,6 @@ function getLocale(request: NextRequest) {
 export const config = {
   matcher: [
     // Skip all internal paths (_next, static, etc.)
-    "/((?!api|_next/static|_next/image|screenshot|favicon.ico|icon.jpg|launcher_mockup.png|googlef6f7f1a7330174f7.html).*)",
+    "/((?!api|_next/static|_next/image|screenshot|favicon.ico|icon.jpg|launcher_mockup.png|googlef6f7f1a7330174f7.html|sitemap.xml|robots.txt).*)",
   ],
 };
