@@ -6,7 +6,7 @@ export const runtime = "edge";
 const locales = ["en", "vi", "es", "ru", "ar"];
 const defaultLocale = "en";
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Check if the pathname has a locale
