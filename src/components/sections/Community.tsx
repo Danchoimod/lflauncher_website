@@ -33,7 +33,7 @@ export const Community = () => {
 
           {/* Discord */}
           <a 
-            href="https://discord.gg/lflauncher" 
+            href="https://discord.gg/Mwu8hMTxcw" 
             target="_blank" 
             rel="noopener noreferrer"
             className="h-[52px] px-8 rounded-xl bg-[#5865F2] text-white flex items-center justify-center gap-3 text-[15px] font-bold hover:bg-[#4752C4] transition-all shadow-lg shadow-indigo-500/20 cursor-pointer"
@@ -46,7 +46,7 @@ export const Community = () => {
 
           {/* Telegram */}
           <a 
-            href="https://t.me/lflauncher" 
+            href="https://t.me/+ugWln6wXNzY4YTk1" 
             target="_blank" 
             rel="noopener noreferrer"
             className="h-[52px] px-8 rounded-xl bg-[#26A5E4] text-white flex items-center justify-center gap-3 text-[15px] font-bold hover:bg-[#1E8DC5] transition-all shadow-lg shadow-blue-500/20 cursor-pointer"

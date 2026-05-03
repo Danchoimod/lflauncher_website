@@ -24,11 +24,11 @@ export const Navbar = () => {
 
   const NAV_LINKS = [
     { name: t("nav.home"), href: `/${language}` },
-    { name: t("nav.features"), href: "#features" },
-    { name: t("nav.installation"), href: "#installation" },
-    { name: t("nav.news"), href: "#news" },
-    { name: t("nav.wiki"), href: "#wiki" },
-    { name: t("nav.community"), href: "#community" },
+    { name: t("nav.about"), href: `/${language}/about` },
+    { name: t("nav.features"), href: `/${language}/#features` },
+    { name: t("nav.news"), href: `/${language}/#news` },
+    { name: t("nav.wiki"), href: `/${language}/wiki/getting-started/installing-lflauncher` },
+    { name: t("nav.community"), href: `/${language}/#community` },
   ];
 
   const currentLang = LANGUAGES.find(l => l.code === language) || LANGUAGES[0];
@@ -126,9 +126,11 @@ export const Navbar = () => {
 
           {/* Actions - Desktop */}
           <div className="hidden md:flex items-center gap-4">
-            <button className="h-[40px] px-6 rounded-full bg-[#56ab2f] text-white text-[14px] font-bold hover:bg-[#4a8e26] transition-all whitespace-nowrap cursor-pointer">
-              {t("nav.download")}
-            </button>
+            <Link href={`/${language}/download`}>
+              <button className="h-[40px] px-6 rounded-full bg-[#56ab2f] text-white text-[14px] font-bold hover:bg-[#4a8e26] transition-all whitespace-nowrap cursor-pointer">
+                {t("nav.download")}
+              </button>
+            </Link>
 
             {/* Language Dropdown */}
             <div className="relative" ref={langRef}>
@@ -221,9 +223,11 @@ export const Navbar = () => {
                 ))}
               </div>
             </div>
-            <button className="h-[40px] w-full rounded-full bg-[#56ab2f] text-white text-[14px] font-bold mt-2 cursor-pointer">
-              {t("nav.download")}
-            </button>
+            <Link href={`/${language}/download`} onClick={() => setIsOpen(false)}>
+              <button className="h-[40px] w-full rounded-full bg-[#56ab2f] text-white text-[14px] font-bold mt-2 cursor-pointer">
+                {t("nav.download")}
+              </button>
+            </Link>
           </div>
         )}
       </div>
