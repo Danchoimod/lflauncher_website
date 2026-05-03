@@ -1,15 +1,18 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { Download, FileText, Check } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export const Hero = () => {
   const { t } = useLanguage();
+  const { lang } = useParams();
 
   return (
-    <section id="home" className="w-full flex justify-center py-10 md:py-0 px-4">
+    <section id="home" className="w-full flex justify-center md:py-0 px-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -38,9 +41,11 @@ export const Hero = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-            <button className="h-[52px] w-full sm:w-auto px-14 rounded-lg bg-[#1E6D00] text-white text-[15px] font-bold flex items-center justify-center gap-2 hover:bg-[#1a5c00] transition-all active:scale-95 cursor-pointer">
-              <Download className="w-[18px] h-[18px] stroke-[2.5px]" /> {t("hero.download")}
-            </button>
+            <Link href={`/${lang}/download`} className="w-full sm:w-auto">
+              <button className="h-[52px] w-full px-14 rounded-lg bg-[#1E6D00] text-white text-[15px] font-bold flex items-center justify-center gap-2 hover:bg-[#1a5c00] transition-all active:scale-95 cursor-pointer">
+                <Download className="w-[18px] h-[18px] stroke-[2.5px]" /> {t("hero.download")}
+              </button>
+            </Link>
             <button className="h-[52px] w-full sm:w-auto px-12 rounded-lg text-[#545F73] text-[15px] font-bold flex items-center justify-center gap-2 hover:bg-black/5 transition-all active:scale-95 cursor-pointer">
               <FileText className="w-[18px] h-[18px]" /> {t("hero.changelog")}
             </button>
