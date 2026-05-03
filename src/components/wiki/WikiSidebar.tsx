@@ -21,6 +21,10 @@ const WIKI_NAV = [
     title: "Overview",
     icon: Layout,
     href: "/wiki/overview",
+    children: [
+      { title: "FAQ", href: "/wiki/overview" },
+      { title: "Feedback and Bugs", href: "/wiki/overview/feedback-and-bugs" },
+    ]
   },
   {
     id: "getting-started",
@@ -30,7 +34,7 @@ const WIKI_NAV = [
     children: [
       { title: "Installing LF Launcher", href: "/wiki/getting-started/installing-lflauncher" },
       { title: "Installing Java", href: "/wiki/getting-started/installing-java" },
-      { title: "Adding Accounts", href: "/wiki/getting-started/adding-accounts" },
+      { title: "Creating an Instance", href: "/wiki/getting-started/creating-instance" },
     ]
   },
   {

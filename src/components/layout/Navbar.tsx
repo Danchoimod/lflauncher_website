@@ -24,10 +24,11 @@ export const Navbar = () => {
 
   const NAV_LINKS = [
     { name: t("nav.home"), href: `/${language}` },
-    { name: t("nav.features"), href: "#features" },
-    { name: t("nav.news"), href: "#news" },
+    { name: t("nav.about"), href: `/${language}/about` },
+    { name: t("nav.features"), href: `/${language}/#features` },
+    { name: t("nav.news"), href: `/${language}/#news` },
     { name: t("nav.wiki"), href: `/${language}/wiki/getting-started/installing-lflauncher` },
-    { name: t("nav.community"), href: "#community" },
+    { name: t("nav.community"), href: `/${language}/#community` },
   ];
 
   const currentLang = LANGUAGES.find(l => l.code === language) || LANGUAGES[0];

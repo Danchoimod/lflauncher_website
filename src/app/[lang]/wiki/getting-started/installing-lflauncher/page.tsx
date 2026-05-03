@@ -9,14 +9,7 @@ export default function InstallingLFLauncher() {
 
   return (
     <div className="max-w-[800px] mx-auto pt-16 pb-24 px-8 md:px-12">
-      {/* Breadcrumbs */}
-      <nav className="flex items-center gap-2 text-[13px] text-zinc-400 mb-8">
-        <Link href={`/${lang}/wiki`} className="hover:text-zinc-600">Wiki</Link>
-        <ChevronRight className="w-3 h-3" />
-        <Link href={`/${lang}/wiki/getting-started`} className="hover:text-zinc-600">Getting Started</Link>
-        <ChevronRight className="w-3 h-3" />
-        <span className="text-zinc-800 font-medium">Installing LFLauncher</span>
-      </nav>
+
 
       {/* Header */}
       <h1 className="text-[36px] md:text-[42px] font-bold text-[#0F172A] mb-8">
