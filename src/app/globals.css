@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: 'Inter', var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-display: 'Outfit', var(--font-outfit), system-ui, -apple-system, sans-serif;
+  
+  --color-brand-primary: #1E6D00;
+  --color-brand-secondary: #545F73;
+  --color-brand-dark: #0F172A;
+  
+  --radius-hero: 36px;
+  --radius-btn: 8px;
+}
+
+:root {
+  --background: #F8F9FF;
+  --foreground: #0F172A;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn-primary-exact {
+  @apply h-[52px] px-8 rounded-[8px] bg-[#1E6D00] text-white font-bold text-[16px] transition-all hover:bg-[#1a5c00] active:scale-95;
+}
+
+.btn-ghost-exact {
+  @apply h-[52px] px-6 rounded-[8px] border border-transparent text-[#545F73] font-bold text-[16px] transition-all hover:bg-black/5 active:scale-95;
+}
