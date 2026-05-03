@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { Screenshot } from "@/components/sections/Screenshot";
 import { Features } from "@/components/sections/Features";
+import { Community } from "@/components/sections/Community";
 import { Sponsors } from "@/components/sections/Sponsors";
 
 export default function Home() {
@@ -21,6 +22,9 @@ export default function Home() {
         
         {/* Features Row-based Section */}
         <Features />
+
+        {/* Community & Open Source */}
+        <Community />
         
         {/* Sponsors Section */}
         <Sponsors />
