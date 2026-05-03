@@ -1,6 +1,6 @@
 "use client";
 
-import { MessageSquare, Bug, Github, Users } from "lucide-react";
+import { MessageSquare, Bug, Users } from "lucide-react";
 import { useParams } from "next/navigation";
 
 export default function FeedbackAndBugs() {
